@@ -1,0 +1,29 @@
+nav > ul{
+    display: flex
+}
+
+nav li{
+    list-style: none;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+nav li:hover{
+    background-color: aquamarine;
+}
+
+nav li .dropdown{
+    display: none;
+    position: absolute; 
+    /* position absolute means that it does not remove or push other content. usually it is done by plug-in software */
+    background-color: brown;
+}
+
+nav li:hover > .dropdown{
+    display: block;
+    
+}
+
+nav li:hover .dropdown li{
+    display: block;
+}
